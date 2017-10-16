@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function printParam(param) {
+               document.getElementById("weather").innerHTML=param;
+        }
+
+    </script>
+</head>
+<body>
+   根据按钮进行打印:
+   <p id="weather"></p>
+   <button onclick="printParam('晴天')">晴天</button>
+   <button onclick="printParam('阴天')">阴天</button>
+</body>
+</html>
