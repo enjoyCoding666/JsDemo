@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    function createNewNode() {
+        var node=document.createElement("p");
+        var  nodeText=document.createTextNode("这是新生成的段落");
+        node.appendChild(nodeText);
+        var para=document.getElementById("para");
+        para.appendChild(node);
+
+    }
+
+</script>
+<body>
+   <div id="para">
+       <p>这是第一部分的段落</p>
+   </div>
+   <button onclick="createNewNode()">点击生成新的段落</button>
+</body>
+</html>
