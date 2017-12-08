@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQueryLib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $("#btn").bind("click",function () {
+                 console.log("点击按钮");
+                 $("p").slideToggle();
+             });
+         });
+    </script>
+
+</head>
+<body>
+       <p id="text">这是一段可隐藏的文本</p>
+       <button id="btn">点击改变文本状态</button>
+</body>
+</html>
