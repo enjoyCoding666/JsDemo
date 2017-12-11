@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQueryLib/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function () {
+              var availableTags=["apple","banana","pear","peach","watermelon","orange"];
+              $("#tags").autocomplete({
+                  source: availableTags
+              });
+         });
+
+    </script>
+</head>
+<body>
+    <div >
+        <label for="tags">Tags: </label>
+        <input id="tags"/>
+    </div>
+</body>
+</html>
