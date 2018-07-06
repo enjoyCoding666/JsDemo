@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQueryLib/jquery-3.2.1.min.js"></script>
+    <script  type="text/javascript">
+        $(document).ready(function () {
+            $("#province").change(function(){
+                $(this).css("background-color","#FFFFCC");
+            });
+
+//            function changeProvince() {
+//                $("#province").css("background-color","#FFFFCC");
+//            }
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>省份： </p>
+    <select  id="province" >
+        <option value="haiNan">海南</option>
+        <option value="guangDong">广东</option>
+        <option value="shangHai" >上海</option>
+    </select>
+</body>
+</html>
