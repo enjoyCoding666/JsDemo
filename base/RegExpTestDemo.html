@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="../jQueryLib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+    function date_test() {
+        var date=$("[name=date]").val();
+        var reg="/yyyy-MM-dd/";
+        if(reg.test(date)){
+            alert("日期符合格式");
+        }else {
+            alert("日期不符合格式");
+        }
+        console.log(date)
+    }
+
+
+</script>
+<body>
+    请按格式(yyyy-MM-dd)输入日期: <br>
+    <input type="text" name="date"><br>
+    <input type="button" name="date_test" value="点击验证日期" onclick="date_test()">
+</body>
+</html>
