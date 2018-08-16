@@ -9,7 +9,8 @@
 
     function date_test() {
         var date=$("[name=date]").val();
-        var reg="/yyyy-MM-dd/";
+        //正则表达式，用两个/包含，不用加引号。
+        var reg=/yyyy-MM-dd/;
         if(reg.test(date)){
             alert("日期符合格式");
         }else {
