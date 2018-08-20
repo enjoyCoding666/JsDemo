@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form role = "form" class="form-horizontal">
+    <div class = "form-group">
+        <label class="col-lg-2 control-label" for = "name">姓名</label>
+        <div class="col-lg-2">
+            <input type = "text" class = "form-control" id = "name"
+                   placeholder = "请输入姓名" />
+        </div>
+    </div>
+    <div class = "form-group">
+        <label class="col-lg-2 control-label" for = "tel">电话号码</label>
+        <div class="col-lg-2">
+            <input type="text" class="form-control" id = "tel"
+                   placeholder = "请输入您的电话号码"/>
+        </div>
+    </div>
+    <div class = "form-group">
+        <label class="col-lg-2 control-label" for = "idCard">请上传身份证</label>
+        <div class="col-lg-2">
+            <input type = "file" id = "idCard" style="display:inline-block;"/>
+        </div>
+    </div>
+    <div class = "form-group">
+        <label class="col-lg-2 control-label" for = "profession">选择职业</label>
+        <div class="col-lg-2">
+            <select id = "profession" class = "form-control">
+                <option>软件工程师</option>
+                <option>测试工程师</option>
+                <option>硬件工程师</option>
+                <option>质量分析师</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-2 col-sm-offset-2">
+            <button type = "submit" class="btn-info btn-lg">提交</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
